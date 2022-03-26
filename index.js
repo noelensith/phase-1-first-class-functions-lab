@@ -14,7 +14,10 @@ function createFareMultiplier(multiplier) {
 // 2 then multiplies whatever is passes through x and doubles the fare.
 const fareDoubler = createFareMultiplier(2);
 const fareTripler = createFareMultiplier(3);
-
+//the function selectDifferentDrivers has the parameters of (drivers, selectingDrivers)
+//drivers the first arg passes through the array ['Antonia', 'Nuru', 'Amari', 'Mo']
+//selectingDrivers passes through the array of functions [returnFirstTwoDrivers, returnLastTwoDrivers];
+//which ever array is passed through selects the drivers
 function selectDifferentDrivers(drivers, selectingDrivers) {
     return selectingDrivers(drivers)
 }
